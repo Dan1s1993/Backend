@@ -23,7 +23,7 @@ app.get('/', (req: Request, res: Response) => {
 app.get('/about',(req:Request,res:Response)=>{
     res.send({message:'name',name:'DEnis'})
 })
-app.post('/about',(req,res)=>{
+app.post('/about',(req:Request,res:Response)=>{
   res.json({title:req.body.title})
 })
 app.listen(port, () => {
