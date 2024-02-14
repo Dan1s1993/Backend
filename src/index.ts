@@ -1,4 +1,6 @@
-import express,{Request,Response} from 'express';
+// import express,{Response,Request} from 'express';
+const express = require('express');
+
 const app = express()
 app.use(express.json())
 const port = process.env.PORT || 3000;
@@ -17,13 +19,13 @@ const html = `
 </html>
 `
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: any, res: any) => {
   res.type('html').send(html)
 })
-app.get('/about',(req:Request,res:Response)=>{
+app.get('/about',(req:any,res:any)=>{
     res.send({message:'name',name:'DEnis'})
 })
-app.post('/about',(req:Request,res:Response)=>{
+app.post('/about',(req:any,res:any)=>{
   res.json({title:req.body.title})
 })
 app.listen(port, () => {
