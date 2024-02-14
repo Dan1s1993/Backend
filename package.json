@@ -4,14 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev":"nodemon --inspect dist/index.js",
-    "watch":"tsc -w",
-    "build":"tsc",
-    "start":"node dist/index.js"
+    "dev": "nodemon --inspect dist/index.js",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "@types/node": "^20.11.7",
+    "@types/node": "^20.11.17",
     "nodemon": "^3.0.3",
     "typescript": "^5.3.3"
   },
